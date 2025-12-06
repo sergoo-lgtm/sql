@@ -1,0 +1,13 @@
+{
+    "domain": "hotmail43.dns.army",
+    "server_address": "http://156.67.80.172/",
+    "imap_server": "156.67.80.172",
+    "server_api_key": "9FEC1B-CCDE03-25D0DC-08E7B0-A05C5B",
+    "create_two_accounts": true,
+    "use_cards": false,
+    "use_real_names": true,
+    "smsbower_api_key": "CyrGukS0aHZI8BAJPv6K4IBn4EdPWXww",
+    "plus_trick": false,
+    "spt_api_key": "1WX7BCOW8EXE3NZ3",
+    "api_key": "5003|OlccEFKSp6BGtlYdNyr5vyPE6cSESzSvPrkrY3Is3f708762"
+}
