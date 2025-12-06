@@ -1,4 +1,4 @@
 # sql
 "SQL practice exercises and project solutions"
 
-##ةغ حقشؤفهسث
+## my peactise
