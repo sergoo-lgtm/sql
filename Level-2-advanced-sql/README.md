@@ -1,23 +1,43 @@
-# 🚀 Level 2: Advanced SQL & Analytics
+# 🚀 Level 2: Advanced SQL Architecture & Analytics
 
-This level deals with complex data retrieval, performance optimization, and solving intricate business problems using advanced SQL features.
+![SQL Advanced](https://img.shields.io/badge/Skill-Advanced_SQL-FF4500?style=for-the-badge&logo=postgresql&logoColor=white)
+![Analytics](https://img.shields.io/badge/Focus-Data_Analytics-blue?style=for-the-badge)
+![Optimization](https://img.shields.io/badge/Performance-Optimization-success?style=for-the-badge)
 
-## 🧠 Advanced Concepts
+Welcome to the **Advanced Level**. This directory marks the transition from simple data retrieval to complex **Data Analysis**, **Reporting**, and **Database Architecture**.
 
-This directory covers high-level topics essential for Data Analysis and Backend Engineering:
+Here, I tackle real-world business problems using the full power of the SQL engine, moving beyond CRUD operations into **OLAP (Online Analytical Processing)** concepts.
 
-| Topic | Description | File |
-| :--- | :--- | :--- |
-| **Multiple Tables** | Mastering `INNER`, `LEFT`, `RIGHT`, and `FULL` Joins. | `multiple_taples.sql` |
-| **Subqueries** | Nested queries and CTEs for complex logic. | `SubQuery.sql` |
-| **Set Operations** | `UNION`, `INTERSECT`, `EXCEPT` operations. | `set-operators.sql` |
-| **Window Functions** | `RANK()`, `DENSE_RANK()`, `ROW_NUMBER()`, `LEAD/LAG`. | `Window-Functions.sql` |
+---
 
-## 📊 Visual Concept: Joins
+## 🗺️ The Advanced Roadmap
+
+This module is structured to build competency layer by layer:
+
+| Module | Key Concepts & Techniques |
+| :--- | :--- |
+| **01. Multiple Tables** | Complex Joins (Self, Cross, Full Outer), Relational Schemas. |
+| **02. Subqueries** | Nested Queries, **CTEs (Common Table Expressions)**, Correlated Subqueries. |
+| **03. Set Operations** | `UNION` vs `UNION ALL`, `INTERSECT`, `EXCEPT` (Data merging logic). |
+| **04. Advanced Aggregates**| `GROUP BY` extensions, `HAVING` filtering, Multi-level aggregation. |
+| **05. Window Functions** | **The Powerhouse:** `OVER()`, `PARTITION BY`, Ranking, Moving Averages. |
+| **06. Case Studies** | Full-scale database projects simulating industry scenarios. |
+
+---
+
+## 🧩 Visualizing the Logic
+
+Understanding how data comes together is crucial. Here is a representation of how I handle complex **Joins** and **Set Operations**:
 
 ```mermaid
-graph LR
-    A[Table A] --- J((JOIN))
-    B[Table B] --- J
-    J --> R[Result Set]
-    style J fill:#f9f,stroke:#333,stroke-width:2px
+graph TD
+    A[Dataset A] 
+    B[Dataset B]
+    
+    A -- Inner Join --> C{Matched Data}
+    B -- Inner Join --> C
+    
+    C -- Filter/Where --> D[Refined Set]
+    D -- Window Function (Rank) --> E[Final Analytical Report]
+    
+    style E fill:#f96,stroke:#333,stroke-width:2px,color:white
