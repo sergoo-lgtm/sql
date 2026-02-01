@@ -1,43 +1,76 @@
-# 🚀 Level 2: Advanced SQL Architecture & Analytics
+<div align="center">
 
-![SQL Advanced](https://img.shields.io/badge/Skill-Advanced_SQL-FF4500?style=for-the-badge&logo=postgresql&logoColor=white)
-![Analytics](https://img.shields.io/badge/Focus-Data_Analytics-blue?style=for-the-badge)
-![Optimization](https://img.shields.io/badge/Performance-Optimization-success?style=for-the-badge)
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=8A2BE2&height=220&section=header&text=SQL%20Level%202:%20Advanced%20Analytics&fontSize=55&fontColor=ffffff&fontAlignY=45&desc=Mastering%20Complex%20Joins,%20Window%20Functions%20%26%20System%20Architecture&descAlignY=70&descAlign=50" width="100%" alt="Advanced SQL Header" />
 
-Welcome to the **Advanced Level**. This directory marks the transition from simple data retrieval to complex **Data Analysis**, **Reporting**, and **Database Architecture**.
+  <p>
+    <img src="https://img.shields.io/badge/Level-Advanced%20Architecture-blueviolet?style=for-the-badge&logo=google-cloud&logoColor=white" />
+    <img src="https://img.shields.io/badge/Skills-OLAP%20%26%20Reporting-success?style=for-the-badge&logo=google-analytics&logoColor=white" />
+    <img src="https://img.shields.io/badge/Database-PostgreSQL%20%2F%20SQL%20Server-0064a5?style=for-the-badge&logo=postgresql&logoColor=white" />
+  </p>
 
-Here, I tackle real-world business problems using the full power of the SQL engine, moving beyond CRUD operations into **OLAP (Online Analytical Processing)** concepts.
-
----
-
-## 🗺️ The Advanced Roadmap
-
-This module is structured to build competency layer by layer:
-
-| Module | Key Concepts & Techniques |
-| :--- | :--- |
-| **01. Multiple Tables** | Complex Joins (Self, Cross, Full Outer), Relational Schemas. |
-| **02. Subqueries** | Nested Queries, **CTEs (Common Table Expressions)**, Correlated Subqueries. |
-| **03. Set Operations** | `UNION` vs `UNION ALL`, `INTERSECT`, `EXCEPT` (Data merging logic). |
-| **04. Advanced Aggregates**| `GROUP BY` extensions, `HAVING` filtering, Multi-level aggregation. |
-| **05. Window Functions** | **The Powerhouse:** `OVER()`, `PARTITION BY`, Ranking, Moving Averages. |
-| **06. Case Studies** | Full-scale database projects simulating industry scenarios. |
+</div>
 
 ---
 
-## 🧩 Visualizing the Logic
+## 🚀 The Engineering Shift
+Welcome to the **Deep Dive**. While Level 1 was about *talking* to the database, Level 2 is about *making the database work for you*.
 
-Understanding how data comes together is crucial. Here is a representation of how I handle complex **Joins** and **Set Operations**:
+In this module, I move beyond simple data retrieval to solve complex business logic involving **Temporal Analysis**, **Ranking Algorithms**, and **Full-Scale Database Design**.
 
-```mermaid
-graph TD
-    A[Dataset A] 
-    B[Dataset B]
-    
-    A -- Inner Join --> C{Matched Data}
-    B -- Inner Join --> C
-    
-    C -- Filter/Where --> D[Refined Set]
-    D -- Window Function (Rank) --> E[Final Analytical Report]
-    
-    style E fill:#f96,stroke:#333,stroke-width:2px,color:white
+> *"Data without context is just noise. Advanced SQL is the filter."*
+
+---
+
+## 🧠 Technical Arsenal (Concepts Mastered)
+
+I have structured this level to cover the most critical tools for a Backend/Data Engineer:
+
+| 📂 Module | 🛠️ Engineering Concept | 💡 Application |
+| :--- | :--- | :--- |
+| **`01-multiple-tables`** | **Complex Joins** | `SELF JOIN` for hierarchy (Manager/Employee), `CROSS JOIN` for matrix generation. |
+| **02-Subqueries** | **Nested Logic** | Correlated Subqueries & CTEs for isolating complex logic steps. |
+| **03-Set-Operations** | **Data Merging** | `UNION`, `INTERSECT`, `EXCEPT` for comparing datasets (e.g., Finding missing inventory). |
+| **04-Advanced-Aggregates**| **Conditional Analytics** | `CASE WHEN` inside `SUM()`/`COUNT()` for pivot-table like reports. |
+| **05-Window-Functions** | **OLAP Powerhouse** | `ROW_NUMBER`, `RANK`, `DENSE_RANK`, `LEAD/LAG` for Time-Series Analysis. |
+| **06-Case-Studies** | **System Design** | End-to-End database creation (Hospital, E-Commerce, Rentals). |
+
+---
+
+## 🏗️ Featured Systems (Case Studies)
+
+This isn't just theory. I built complete schemas mimicking real-world software backends.
+
+### 🏥 [Hospital Management System](./06-sql-Practice-case-studies/Project%20-%20Hospital%20Management%20System.sql)
+*A healthcare workflow system managing Patients, Doctors, and Treatments.*
+* **Key Tech:** `ON DELETE CASCADE` for data integrity, `RANK()` for doctor performance, Relational Integrity.
+* **Scenario:** Tracking patient history across multiple specializations.
+
+### 🛒 [E-Commerce Order System](./06-sql-Practice-case-studies/E-Commerce-Order-Management-System-project.sql)
+*A full-scale sales backend tracking the lifecycle of an order.*
+* **Key Tech:** Revenue Analysis, `HAVING` clauses for high-value customers, Product Ranking.
+* **Scenario:** Calculating monthly revenue growth and shipping logistics.
+
+### 🏠 [Happy Haven Rentals](./06-sql-Practice-case-studies/Happy-Haven-House-Rental-App.sql)
+*An Airbnb-style booking platform.*
+* **Key Tech:** Complex Filtering (Properties with specific amenities), Date Range overlaps for bookings.
+* **Scenario:** "Find users who made >1 payment and booked in July 2023".
+
+---
+
+## ⚡ "Senior" Code Highlights
+
+A showcase of the most complex logic implementations in this repository.
+
+### 1️⃣ Time-Series Analysis (Moving Averages)
+Using `Window Functions` to calculate running totals and moving averages without external code.
+```sql
+-- Calculating a 3-Row Moving Average for Salaries
+SELECT 
+    employee_id, 
+    salary,
+    AVG(salary) OVER (
+        PARTITION BY department 
+        ORDER BY employee_id 
+        ROWS BETWEEN 2 PRECEDING AND CURRENT ROW
+    ) AS moving_avg_3
+FROM employees;
