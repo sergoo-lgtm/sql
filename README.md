@@ -1,37 +1,31 @@
-# 🗄️ SQL Mastery: From Basics to Advanced Analytics
+<div align="center">
 
-![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
-![Database](https://img.shields.io/badge/Database-Schema-blue?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active_Practice-success?style=for-the-badge)
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0f4c81,8A2BE2&height=250&section=header&text=SQL%20Zero%20to%20Hero&fontSize=70&fontColor=ffffff&fontAlignY=45&desc=The%20Complete%20Roadmap%20to%20Database%20Mastery&descAlignY=70&descAlign=50" width="100%" alt="SQL Master Header" />
 
-Welcome to my **SQL Practice Archive**. This repository documents my journey in mastering Database Management Systems, split into structured levels ranging from fundamental syntax to complex analytical queries and real-world case studies.
+  <p>
+    <img src="https://img.shields.io/badge/Track-Data%20Engineering-0f4c81?style=for-the-badge&logo=azure-devops&logoColor=white" />
+    <img src="https://img.shields.io/badge/SQL-Expert%20Level-8A2BE2?style=for-the-badge&logo=postgresql&logoColor=white" />
+    <img src="https://img.shields.io/badge/Projects-Real%20World%20Simulations-success?style=for-the-badge&logo=github&logoColor=white" />
+  </p>
 
-## 🗺️ Repository Structure
+  <br>
 
-The roadmap is divided into two distinct levels of difficulty:
-
-| Level | Focus Area | Key Concepts |
-| :--- | :--- | :--- |
-| **[📂 Level 1: Basic](./Level-1-basic-sql)** | **Foundations** | CRUD Operations, Table Creation, Basic Functions. |
-| **[📂 Level 2: Advanced](./Level-2-advanced-sql)** | **Deep Dive** | Joins, Subqueries, Window Functions, Aggregations. |
+</div>
 
 ---
 
-## 🛠️ Tech Stack & Concepts
+## 🗺️ The Journey: From Syntax to Architecture
 
-* **Language:** Standard SQL (ANSI SQL compliant).
-* **Key Skills:** Data Definition (DDL), Data Manipulation (DML), Query Optimization.
-* **Projects:** Real-world scenarios (E-Commerce, Library, Retail).
+This repository is not just a collection of queries; it is a documented path of transforming from a code-writer to a **Database Architect**.
 
----
-
-## 🚀 How to Use
-
-1.  Navigate to a specific level folder.
-2.  Open the `.sql` files to view the query logic.
-3.  Each file represents a specific problem set or a full database project.
-
-> **Note:** These scripts are designed to run on major SQL engines (MySQL, PostgreSQL, SQL Server) with minimal syntax adjustments.
-
----
-**Crafted with 💻 and lots of `SELECT *`**
+```mermaid
+graph LR
+    A[Start] --> B(Level 1: Foundations)
+    B -- SELECT, WHERE, DDL --> C{Practice Projects}
+    C --> D(Level 2: Advanced Analytics)
+    D -- Window Functions, CTEs --> E[System Design]
+    E --> F((Mastery))
+    
+    style B fill:#0f4c81,stroke:#333,stroke-width:2px,color:white
+    style D fill:#8A2BE2,stroke:#333,stroke-width:2px,color:white
+    style F fill:#2ea44f,stroke:#333,stroke-width:4px,color:white
