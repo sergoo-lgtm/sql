@@ -1,16 +1,15 @@
 <div align="center">
-  
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0f4c81,20B2AA&height=300&section=header&text=SQL%20Level%201&fontSize=80&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=The%20Foundation%20%26%20Basic%20Queries&descAlignY=60&descAlign=50" width="100%" alt="SQL Level 1 Header" />
 
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=25&pause=1000&color=FCA311&center=true&vCenter=true&width=600&lines=Mastering+SELECT+Statement;Data+Definition+(DDL);Data+Manipulation+(DML);Building+Real+Business+Databases+🚀" alt="Typing SVG" />
-  </a>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0f4c81&height=200&section=header&text=SQL%20Level%201&fontSize=80&fontColor=ffffff&fontAlignY=50" width="100%" alt="SQL Level 1" />
+
+  <h3>🏗️ The Foundation: Data Definition & Manipulation</h3>
 
   <p>
-    <img src="https://img.shields.io/badge/Focus-Fundamentals-0f4c81?style=for-the-badge&logo=codeforces&logoColor=white" />
+    <img src="https://img.shields.io/badge/Focus-Fundamentals-0f4c81?style=for-the-badge&logo=read-the-docs&logoColor=white" />
     <img src="https://img.shields.io/badge/Database-SQLite%20%2F%20Postgres-orange?style=for-the-badge&logo=postgresql&logoColor=white" />
-    <img src="https://img.shields.io/badge/Code-Clean%20%26%20Structured-success?style=for-the-badge&logo=geeksforgeeks&logoColor=white" />
+    <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" />
   </p>
+
 </div>
 
 ---
