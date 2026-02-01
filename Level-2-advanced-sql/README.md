@@ -1,9 +1,11 @@
 <div align="center">
 
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=8A2BE2&height=220&section=header&text=SQL%20Level%202:%20Advanced%20Analytics&fontSize=55&fontColor=ffffff&fontAlignY=45&desc=Mastering%20Complex%20Joins,%20Window%20Functions%20%26%20System%20Architecture&descAlignY=70&descAlign=50" width="100%" alt="Advanced SQL Header" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=8A2BE2&height=200&section=header&text=SQL%20Level%202&fontSize=80&fontColor=ffffff&fontAlignY=50" width="100%" alt="SQL Level 2 Header" />
+
+  <h3>🚀 Advanced SQL: Complex Joins, Window Functions & Analytics</h3>
 
   <p>
-    <img src="https://img.shields.io/badge/Level-Advanced%20Architecture-blueviolet?style=for-the-badge&logo=google-cloud&logoColor=white" />
+    <img src="https://img.shields.io/badge/Level-Advanced%20Architecture-8A2BE2?style=for-the-badge&logo=google-cloud&logoColor=white" />
     <img src="https://img.shields.io/badge/Skills-OLAP%20%26%20Reporting-success?style=for-the-badge&logo=google-analytics&logoColor=white" />
     <img src="https://img.shields.io/badge/Database-PostgreSQL%20%2F%20SQL%20Server-0064a5?style=for-the-badge&logo=postgresql&logoColor=white" />
   </p>
